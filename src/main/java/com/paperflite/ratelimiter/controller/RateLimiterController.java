@@ -22,7 +22,7 @@ public class RateLimiterController {
         this.userBucketService = userBucketService;
     }
 
-    @PostMapping(value = "/userBucketRegistration")
+    @GetMapping(value = "/userBucketRegistration")
     //Assuming the default request Rate to be 10 per minute
     public UserBucketCreationDTO createUserBucket(@RequestParam("userId") String userId, @RequestParam(value= "requestLimit", defaultValue = "10") String requestLimit, @RequestParam(value = "requestTimeMinutes", defaultValue = "1") String requestTimeMinutes) {
         UserBucketCreationDTO userBucketCreationDTO = new UserBucketCreationDTO();
