@@ -33,5 +33,5 @@ Step 3: Run the project. <br>
 2) If required, use categorization of client, like for example FREE user, BASIC user, PREMIUM user with default rate limits.
 
 ## END POINTS
-1) Register the user with preference - http://localhost:8080/rateLimiter/userBucketRegistration?userId=<<Replace with user id/ip>>&requestLimit=<<Replace with api request limit>>&requestTimeMinutes=<<Replace with time>>
-2) Request Access - http://localhost:8080/rateLimiter/grant-access?userId=<<Registered User ID/IP>>
+1) Register the user with preference - http://localhost:8080/rateLimiter/userBucketRegistration?userId=<<Replace with user id/ip>>&requestLimit=<<Replace with api request limit>>&requestTimeMinutes=<<Replace with window time>>
+2) Request Access - http://localhost:8080/rateLimiter/grant-access?userId=<<replace with Registered User ID/IP>>
