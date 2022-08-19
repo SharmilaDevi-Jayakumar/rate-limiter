@@ -23,6 +23,16 @@ external DB is used to store/retrieve user-service agreement.
 2) Bucket4j - Java rate-limiting library based on the token-bucket algorithm
 3) Junit for test cases
 
+## Deployed server
+I have deployed the application at https://rate-limiter-tool.herokuapp.com/
+
+##Example Endpoints in the deployed server for testing
+1) Register the user with preference - https://rate-limiter-tool.herokuapp.com/rateLimiter/userBucketRegistration?userId=1&requestLimit=2&requestTimeMinutes=1
+The user id, request limit and window time can be changed according to the requirement
+
+2) https://rate-limiter-tool.herokuapp.com//rateLimiter/grant-access?userId=1
+The user id can be changed according to the requirement
+
 ## Steps to run the application in local
 Step 1: Fetch the springboot project from https://github.com/SharmilaDevi-Jayakumar/rate-limiter <br>
 Step 2: This project uses maven as the build tool, so run maven install to install the required maven dependencies specified in the pom.xml <br>
