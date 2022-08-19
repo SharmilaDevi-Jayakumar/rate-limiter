@@ -26,7 +26,7 @@ external DB is used to store/retrieve user-service agreement.
 ## Deployed server
 I have deployed the application at https://rate-limiter-tool.herokuapp.com/
 
-##Example Endpoints in the deployed server for testing
+## Example Endpoints in the deployed server for testing
 1) Register the user with preference - https://rate-limiter-tool.herokuapp.com/rateLimiter/userBucketRegistration?userId=1&requestLimit=2&requestTimeMinutes=1
 The user id, request limit and window time can be changed according to the requirement
 
